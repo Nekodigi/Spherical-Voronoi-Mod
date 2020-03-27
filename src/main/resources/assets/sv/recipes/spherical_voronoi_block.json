@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AVP",
+    "SBH",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:diamond_axe"
+    },
+    "V": {
+      "item": "minecraft:diamond_shovel"
+    },
+    "P": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "S": {
+      "item": "minecraft:diamond_sword"
+    },
+    "H": {
+      "item": "minecraft:diamond_hoe"
+    },
+    "B": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "sv:spherical_voronoi_block"
+  }
+}

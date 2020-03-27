@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sv",
+  "name": "Spherical Voronoi",
+  "description": "Simple Spherical Voronoi",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Nekodigi"],
+  "credits": "All my subscribers!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
