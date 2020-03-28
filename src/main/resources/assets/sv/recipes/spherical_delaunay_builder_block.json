@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DCD",
+    "DDD"
+  ],
+  "key": {
+    "C": {
+      "item": "sv:spherical_delaunay_block"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "sv:spherical_delaunay_builder_block"
+  }
+}

@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import org.lwjgl.opengl.GL11;
 import sv.utils.vector.Vector;
 
-public class Edge {
+public class Edge{
     public Vector sp, ep;
     public float width = 0.1f;
 
@@ -21,6 +21,24 @@ public class Edge {
     public Edge(float[] sp, float[] ep){
         this.sp = new Vector(sp);
         this.ep = new Vector(ep);
+    }
+
+    public double dist(Vector c) {
+        Vector ap = Vector.sub(c, sp);
+        Vector ab = Vector.sub(ep, sp);
+        double l = Vector.dist(sp, ep);
+        ab.normalize(); // Normalize the line
+        double scala = ap.dot(ab);
+        if(scala <= 0){
+            return Vector.dist(c, sp);
+        }else if(scala >= l){
+            return Vector.dist(c, ep);
+        }
+        else{
+            ab.mult(scala);
+            Vector normalPoint = Vector.add(sp, ab);
+            return Vector.dist(c, normalPoint);
+        }
     }
 
     public void show(){

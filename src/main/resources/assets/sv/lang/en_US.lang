@@ -1,3 +1,5 @@
 # Blocks
 tile.spherical_delaunay_block.name=Spherical Delaunay
+tile.spherical_delaunay_builder_block.name=Spherical Delaunay Builder (Danger)
 tile.spherical_voronoi_block.name=Spherical Voronoi
+tile.spherical_voronoi_builder_block.name=Spherical Voronoi Builder (Danger)
