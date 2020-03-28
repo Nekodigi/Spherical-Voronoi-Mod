@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import sv.init.ModBlocks;
 import sv.init.ModItems;
 import sv.init.ModTextures;
-import sv.utils.IHasModel;
+import sv.utils.interfaces.IHasModel;
 
 @Mod.EventBusSubscriber
 public class ResistryHandler {

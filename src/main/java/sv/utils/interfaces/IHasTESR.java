@@ -1,4 +1,4 @@
-package sv.utils;
+package sv.utils.interfaces;
 
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 

@@ -3,7 +3,7 @@ package sv.tileentities;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.AxisAlignedBB;
-import sv.utils.IHasTESR;
+import sv.utils.interfaces.IHasTESR;
 import sv.utils.MathHelper;
 import sv.utils.convexHull.ConvexHull;
 import sv.utils.convexHull.Utils;

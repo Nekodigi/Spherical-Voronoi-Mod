@@ -4,7 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import sv.Main;
 import sv.init.ModItems;
-import sv.utils.IHasModel;
+import sv.utils.interfaces.IHasModel;
 
 public class ItemBase extends Item implements IHasModel {
     public ItemBase(String name){

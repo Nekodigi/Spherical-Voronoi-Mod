@@ -13,7 +13,7 @@ public class Main {
     public static Main instance;
     public static final String MOD_ID = "sv";
     public static final String NAME = "SphericalVoronoi";
-    public static final String VERSION = "1.0_BETA";
+    public static final String VERSION = "1.1_BETA";
     public static final String ACCEPTED_VERSIONS = "[1.12.2]";
     public static final String CLIENT_PROXY_CLASS = "sv.proxy.ClientProxy";
     public static final String COMMON_PROXY_CLASS = "sv.proxy.CommonProxy";

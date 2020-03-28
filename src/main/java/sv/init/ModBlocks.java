@@ -9,8 +9,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 import sv.Main;
 import sv.blocks.BlockSphericalDelaunay;
 import sv.blocks.BlockSphericalVoronoi;
-import sv.utils.IHasTESR;
-import sv.utils.IHasTileEntity;
+import sv.utils.interfaces.IHasTESR;
+import sv.utils.interfaces.IHasTileEntity;
 
 import java.util.ArrayList;
 import java.util.List;

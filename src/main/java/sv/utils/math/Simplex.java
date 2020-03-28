@@ -40,6 +40,15 @@ public class Simplex extends FVector {
         vertices = new Vertex[dim];
     }
 
+    public Simplex(Vertex... vertices){
+        dim = vertices.length;
+        if(dim < 2 || dim > 4){ throw new IllegalArgumentException("Invalid number of dimension for Simplex:"+dim);}
+        adjacent = new Simplex[dim];
+        normal = new float[dim];
+        centroid = new float[dim];
+        this.vertices = vertices;
+    }
+
     public void calcCentroid(){
         centroid = avg(Utils.extractPos(vertices));
     }

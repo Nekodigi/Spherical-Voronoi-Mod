@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 import sv.Main;
 import sv.init.ModBlocks;
 import sv.init.ModItems;
-import sv.utils.IHasModel;
+import sv.utils.interfaces.IHasModel;
 
 public class BlockBase extends Block implements IHasModel {
     public static Item item;

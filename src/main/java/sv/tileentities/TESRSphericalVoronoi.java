@@ -26,17 +26,18 @@ public class TESRSphericalVoronoi extends TileEntitySpecialRenderer<TileEntitySp
         GlStateManager.disableLighting();
 
         GlStateManager.color(0.1f, 0.1f, 0.1f);
-        for(Simplex simplex : te.hull.simplexes){
-            simplex.show();
+        for(Edge edge : te.sVoronoi.edges){
+            edge.show();
         }
 
         GlStateManager.color(.9f, .3f, .1f);
         PrimitiveRender.sphere(te.r/5*4);
 
         GlStateManager.color(0f, 0.2f, 0.2f);
-        for(Vertex v : te.points){
-            PrimitiveRender.cube(v.pos[0], v.pos[1], v.pos[2], 0.1f);
+        for(Edge edge : te.sVoronoi.edges){
+            PrimitiveRender.cube(edge.sp.x, edge.sp.y, edge.sp.z, 0.1f);
         }
+
         GlStateManager.popMatrix();
         GlStateManager.enableLighting();
     }
