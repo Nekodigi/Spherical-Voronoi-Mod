@@ -7,6 +7,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import sv.Main;
+import sv.blocks.BlockSphericalDelaunay;
 import sv.blocks.BlockSphericalVoronoi;
 import sv.utils.IHasTESR;
 import sv.utils.IHasTileEntity;
@@ -17,6 +18,7 @@ import java.util.List;
 public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
+    public static final BlockSphericalDelaunay SphericalDelaunayBlock = new BlockSphericalDelaunay("spherical_delaunay_block", Material.IRON);
     public static final BlockSphericalVoronoi SphericalVoronoiBlock = new BlockSphericalVoronoi("spherical_voronoi_block", Material.IRON);
 
     public static void register(IForgeRegistry<Block> registry) {

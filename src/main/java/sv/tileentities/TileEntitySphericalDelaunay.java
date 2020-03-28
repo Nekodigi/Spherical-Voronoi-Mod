@@ -12,11 +12,11 @@ import sv.utils.vector.Vertex;
 
 import java.util.ArrayList;
 
-public class TileEntitySphericalVoronoi extends TileEntity implements IHasTESR {
+public class TileEntitySphericalDelaunay extends TileEntity implements IHasTESR {
     float r = 5;
     ArrayList<Vertex> points = new ArrayList<Vertex>();
     ConvexHull hull = new ConvexHull(3);
-    public TileEntitySphericalVoronoi(){
+    public TileEntitySphericalDelaunay(){
         for(int i = 0; i < 100; i++) {
             float u = (float)MathHelper.random(-1, 1);
             float theta = (float)MathHelper.random(0, 2d*Math.PI);
@@ -25,8 +25,8 @@ public class TileEntitySphericalVoronoi extends TileEntity implements IHasTESR {
         hull.Generate(points);
     }
     @Override
-    public TileEntitySpecialRenderer<TileEntitySphericalVoronoi> getTESR() {
-        return new TESRSphericalVoronoi();
+    public TileEntitySpecialRenderer<TileEntitySphericalDelaunay> getTESR() {
+        return new TESRSphericalDelaunay();
     }
 
     @Override

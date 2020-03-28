@@ -2,24 +2,20 @@ package sv.tileentities;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import org.lwjgl.opengl.GL11;
-import sv.utils.Edge;
 import sv.utils.math.Simplex;
 import sv.utils.render.PrimitiveRender;
-import sv.utils.vector.Vector;
 import sv.utils.vector.Vertex;
 
-public class TESRSphericalVoronoi extends TileEntitySpecialRenderer<TileEntitySphericalVoronoi>{
+public class TESRSphericalDelaunay extends TileEntitySpecialRenderer<TileEntitySphericalDelaunay>{
     @Override
-    public boolean isGlobalRenderer(TileEntitySphericalVoronoi p_isGlobalRenderer_1_) {
+    public boolean isGlobalRenderer(TileEntitySphericalDelaunay p_isGlobalRenderer_1_) {
         return true;
     }
 
     @Override
-    public void render(TileEntitySphericalVoronoi te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
+    public void render(TileEntitySphericalDelaunay te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
         GlStateManager.pushMatrix();
         GlStateManager.translate(x + 0.5, y + 1 + te.r, z + 0.5);
         Minecraft.getMinecraft().getTextureManager().bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);

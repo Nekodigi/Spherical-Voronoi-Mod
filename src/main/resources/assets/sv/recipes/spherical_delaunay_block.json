@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "DID",
+    "III",
     "DLD",
-    "DID"
+    "III"
   ],
   "key": {
     "I": {
@@ -17,6 +17,6 @@
     }
   },
   "result": {
-    "item": "sv:spherical_voronoi_block"
+    "item": "sv:spherical_delaunay_block"
   }
 }

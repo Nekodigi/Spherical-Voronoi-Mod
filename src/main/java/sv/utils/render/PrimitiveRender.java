@@ -1,5 +1,6 @@
 package sv.utils.render;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
@@ -8,11 +9,12 @@ import org.lwjgl.opengl.GL11;
 import sv.utils.vector.Vector;
 
 public class PrimitiveRender {
-    public static void sphere(double r, TextureAtlasSprite icon){
-        sphere(r, 32, 16, icon);
+    public static void sphere(double r){
+        sphere(r, 32, 16);
     }
 
-    public static void sphere(double r, int NI, int NJ, TextureAtlasSprite icon){
+    public static void sphere(double r, int NI, int NJ){
+        TextureAtlasSprite icon = Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite("sv:blocks/white_tile");
         Tessellator tessellator = Tessellator.getInstance();
         BufferBuilder buffer =  tessellator.getBuffer();
         double deltaU = icon.getMaxU() - icon.getMinU();
@@ -43,7 +45,8 @@ public class PrimitiveRender {
         }
     }
 
-    public static void cube(double x, double y, double z, double size, TextureAtlasSprite icon){
+    public static void cube(double x, double y, double z, double size){
+        TextureAtlasSprite icon = Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite("sv:blocks/white_tile");
         Tessellator tessellator = Tessellator.getInstance();
         BufferBuilder buffer =  tessellator.getBuffer();
         buffer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);//render botton surface

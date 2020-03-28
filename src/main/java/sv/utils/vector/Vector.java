@@ -9,6 +9,12 @@ public class Vector {
         this.z = z;
     }
 
+    public Vector(float[] v){
+        this.x = v[0];
+        this.y = v[1];
+        this.z = v[2];
+    }
+
     public Vector mult(double value){
         x *= value;
         y *= value;
@@ -21,11 +27,5 @@ public class Vector {
         double ty = r * Math.sin(phi);
         double tz = r * Math.sin(theta) * Math.cos(phi);
         return new Vector(tx, ty, tz);
-    }
-
-    public static Vector sphereSampling(double u, double theta){
-        double x = Math.sqrt(1-u*u)*Math.cos(theta);
-        double y = Math.sqrt(1-u*u)*Math.sin(theta);
-        return new Vector(x, y, u);
     }
 }
